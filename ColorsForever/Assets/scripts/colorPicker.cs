@@ -17,12 +17,18 @@ public class colorPicker : MonoBehaviour {
 	*
 	*/
 
-	enum ColorValues{ultraviolet=380,violet=420,blue=475,green=520,yellow=575,orange=590,red=620,infrared=750}
-	enum ColorIndex{black,violet,blue,green,yellow,orange,red,infrared}
-	Color[] colors = new Color[] {Color.black,Color.Lerp(Color.red,Color.blue,.5f),Color.blue,Color.green,Color.yellow,Color.Lerp(Color.red,Color.yellow,.5f),Color.red,Color.black};
-	int numOfXPixels;
-	float range = 370;
-	int lowestColorNumber = 380;
+	private enum ColorValues{ultraviolet=380,violet=420,blue=475,green=520,yellow=575,orange=590,red=620,infrared=750}
+	private enum ColorIndex{black,violet,blue,green,yellow,orange,red,infrared}
+	private Color[] colors = new Color[] {Color.black,Color.Lerp(Color.red,Color.blue,.5f),Color.blue,Color.green,Color.yellow,Color.Lerp(Color.red,Color.yellow,.5f),Color.red,Color.black};
+	private int numOfXPixels;
+	private float range = 370;
+	private int lowestColorNumber = 380;
+	public Color pickedColor;
+	public float spectrumNumber;
+
+	public Color PickedColor{
+		get{return pickedColor;}
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -37,8 +43,9 @@ public class colorPicker : MonoBehaviour {
 			float mouseX = Input.mousePosition.x;
 			float mouseToScreenRatio = mouseX/numOfXPixels;
 			float colorNumber = (mouseToScreenRatio*range)+ lowestColorNumber;
-
-			renderer.material.color = PickColor(colorNumber);
+			spectrumNumber = colorNumber;
+			pickedColor = PickColor(colorNumber);
+			//renderer.material.color = pickedColor;
 		}
 	}
 
