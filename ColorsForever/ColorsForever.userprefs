@@ -1,8 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\playerController.cs">
     <Files>
       <File FileName="Assets\scripts\playerController.cs" Line="12" Column="32" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/TurretScript.cs">
+    <Files>
+      <File FileName="Assets/scripts/TurretScript.cs" Line="38" Column="27" />
+>>>>>>> feature/turretCrafting
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
