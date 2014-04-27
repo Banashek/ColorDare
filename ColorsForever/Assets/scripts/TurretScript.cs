@@ -27,7 +27,9 @@ public class TurretScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		fireTime=0;
-		rotation=0;
+		rotation = transform.rotation.eulerAngles.z;
+		fireRate = g;
+		bulletSpeed = b;
 	}
 	
 	// Update is called once per frame
@@ -37,6 +39,8 @@ public class TurretScript : MonoBehaviour {
 		SetRateOfFire();
 		Shoot ();
 	}
+
+
 
 	void GetColors ()
 	{
