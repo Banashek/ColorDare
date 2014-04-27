@@ -55,6 +55,7 @@
      <Compile Include="Assets\scripts\colorPicker.cs" />
      <Compile Include="Assets\scripts\colorPicker.old.cs" />
      <Compile Include="Assets\scripts\nextLevelLoad.cs" />
+     <Compile Include="Assets\scripts\platformScript.cs" />
      <Compile Include="Assets\scripts\playerController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
