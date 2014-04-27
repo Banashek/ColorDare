@@ -17,9 +17,15 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 																GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																	GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																	GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																	GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> feature/color_to_property_assignment
 >>>>>>> levelTwo
 =======
 																		GlobalSection(MonoDevelopProperties) = preSolution
