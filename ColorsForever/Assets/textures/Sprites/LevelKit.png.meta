@@ -1,0 +1,81 @@
+fileFormatVersion: 2
+guid: 7c87d15ec161846fc8812d10c6393f68
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: LevelKit_256
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 256
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: LevelKit_512
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 512
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: LevelKit_Step
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 232
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: LevelKit_X
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 104
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
