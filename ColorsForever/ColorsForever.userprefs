@@ -1,12 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/playerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ControllerControllerPanelScript.cs">
     <Files>
-      <File FileName="Assets/scripts/platformScript.cs" Line="56" Column="4" />
-      <File FileName="Assets/scripts/playerController.cs" Line="16" Column="25" />
-      <File FileName="Assets/scripts/platformScript.cs" Line="82" Column="1" />
+      <File FileName="Assets/scripts/playerController.cs" Line="59" Column="1" />
+      <File FileName="Assets/ControllerControllerPanelScript.cs" Line="11" Column="31" />
+      <File FileName="Assets/scripts/platformScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/playerController.cs" Line="41" Column="3" />
       <File FileName="Assets/scripts/SawBladeScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/colorPicker.cs" Line="40" Column="45" />
+      <File FileName="Assets/scripts/colorPicker.cs" Line="33" Column="62" />
       <File FileName="Assets/scripts/BulletScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/TurretScript.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/colorChanger.cs" Line="1" Column="1" />

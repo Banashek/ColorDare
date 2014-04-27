@@ -9,19 +9,28 @@ public class colorPicker : MonoBehaviour {
 	public int decreaseButton, increaseButton;
 
 	public float increment = .01f;
+	private ControllerControllerPanelScript controllerSettings;
 
 	public Color PickedColor{
 		get{return pickedColor;}
 	}
+	
+	void Awake(){
+		controllerSettings = GameObject.FindWithTag("ControllerController").GetComponent<ControllerControllerPanelScript>();
+		
+	}
 
 	// Use this for initialization
 	void Start () {
-		decreaseButton = 17; //1 for windows, 17 for mac
-		increaseButton = 18; //2 for windows, 18 for mac
+		decreaseButton = controllerSettings.ReturnDecreaseButton();
+		increaseButton = controllerSettings.ReturnIncreaseButton();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		decreaseButton = controllerSettings.ReturnDecreaseButton();
+		increaseButton = controllerSettings.ReturnIncreaseButton();
 
 		if((Input.GetKey("joystick 1 button "+decreaseButton) || Input.GetKey(KeyCode.A) ) && r<1){
 			r+=increment;

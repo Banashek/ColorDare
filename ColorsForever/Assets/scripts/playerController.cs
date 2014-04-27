@@ -15,9 +15,16 @@ public class playerController : MonoBehaviour {
 	public Vector3 playerResetPoint;
 	public int jumpButton; 
 
+	private ControllerControllerPanelScript controllerSettings;
+
+	void Awake(){
+		controllerSettings = GameObject.FindWithTag("ControllerController").GetComponent<ControllerControllerPanelScript>();
+
+	}
+
 	// Use this for initialization
 	void Start () {
-		jumpButton = 16; //0 for windows, 16 for mac
+		jumpButton = controllerSettings.ReturnJumpButton();
 	}
 	
 	// Update is called once per frame
@@ -30,6 +37,7 @@ public class playerController : MonoBehaviour {
 	}
 
 	void Update() {
+		jumpButton = controllerSettings.ReturnJumpButton();
 
 		if(grounded && Input.GetKeyDown("joystick "+playerNumber.ToString()+" button "+jumpButton))
 		{
