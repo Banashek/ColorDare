@@ -31,4 +31,15 @@ public class playerController : MonoBehaviour {
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 		}
 	}
+
+	
+	void OnCollisionEnter2D(Collision2D coll) {
+		if (coll.gameObject.tag == "Bullet")
+			Dead ();
+	}
+	
+	void Dead(){
+		gameObject.transform.position = new Vector3 (0, 0, 0);
+		Application.LoadLevel (0);
+	}
 }
