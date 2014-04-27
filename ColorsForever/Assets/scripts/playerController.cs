@@ -13,10 +13,11 @@ public class playerController : MonoBehaviour {
 	public int playerNumber = 1;
 	public string playerInputName;
 	public Vector3 playerResetPoint;
+	public int jumpButton; 
 
 	// Use this for initialization
 	void Start () {
-	
+		jumpButton = 16; //0 for windows, 16 for mac
 	}
 	
 	// Update is called once per frame
@@ -30,7 +31,7 @@ public class playerController : MonoBehaviour {
 
 	void Update() {
 
-		if(grounded && Input.GetKeyDown("joystick "+playerNumber.ToString()+" button 0"))
+		if(grounded && Input.GetKeyDown("joystick "+playerNumber.ToString()+" button "+jumpButton))
 		{
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 		}

@@ -66,7 +66,7 @@ public class platformScript : MonoBehaviour {
 	}
 
 	void SetRotation(float amount){
-		transform.rotation = Quaternion.Euler(0,0,amount);
+		transform.rotation = Quaternion.Euler(0,0,amount*360);
 	}
 
 	void MoveOnX(float amount){ //amount is from 0-1
