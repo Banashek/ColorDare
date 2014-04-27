@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e2fb9eb8b6d0f4c9081ea647c8fd4a32
+=======
+guid: bc7008ae6cab64e82bcceb84ce420c42
+>>>>>>> feature/color_picker_bar_implementation
 TextureImporter:
   serializedVersion: 2
   mipmaps:
