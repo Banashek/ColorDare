@@ -19,21 +19,21 @@ public class colorPicker : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if(Input.GetKey("joystick 1 button 1") && r<=(1-increment)){
+		if((Input.GetKey("joystick 1 button 1") || Input.GetKey(KeyCode.A) ) && r<=(1-increment)){
 			r+=increment;
-		}else if(Input.GetKey("joystick 1 button 2") && r>=increment){
+		}else if((Input.GetKey("joystick 1 button 2") || Input.GetKey(KeyCode.Z) ) && r>=increment){
 			r-=increment;
 		}
 
-		if(Input.GetKey("joystick 2 button 1") && g<=(1-increment)){
+		if((Input.GetKey("joystick 2 button 1") || Input.GetKey(KeyCode.S) ) && g<=(1-increment)){
 			g+=increment;
-		}else if(Input.GetKey("joystick 2 button 2") && g>=increment){
+		}else if((Input.GetKey("joystick 2 button 2") || Input.GetKey(KeyCode.X) ) && g>=increment){
 			g-=increment;
 		}
 
-		if(Input.GetKey("joystick 3 button 1") && b<=(1-increment)){
+		if((Input.GetKey("joystick 3 button 1") || Input.GetKey(KeyCode.D) ) && b<=(1-increment)){
 			b+=increment;
-		}else if(Input.GetKey("joystick 3 button 2") && b>=increment){
+		}else if((Input.GetKey("joystick 3 button 2") || Input.GetKey(KeyCode.C) ) && b>=increment){
 			b-=increment;
 		}
 

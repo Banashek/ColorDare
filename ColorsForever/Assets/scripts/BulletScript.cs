@@ -14,6 +14,12 @@ public class BulletScript : MonoBehaviour {
 	void Update () {
 		time+=Time.deltaTime;
 
-		if(time>5.0f) DestroyImmediate(gameObject);
+		if(time>5.0f) Destroy(gameObject);
+	}
+
+	void OnCollisionEnter2D(Collision2D coll){
+		if(coll.gameObject.tag!="Bullet"){
+			Destroy(gameObject);
+		}
 	}
 }

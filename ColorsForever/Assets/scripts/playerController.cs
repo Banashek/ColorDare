@@ -29,6 +29,7 @@ public class playerController : MonoBehaviour {
 	}
 
 	void Update() {
+
 		if(grounded && Input.GetKeyDown("joystick "+playerNumber.ToString()+" button 0"))
 		{
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
