@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\scripts\BulletScript.cs" />
      <Compile Include="Assets\scripts\ColorControlledObjectScript.cs" />
+     <Compile Include="Assets\scripts\ControllerControllerPanelScript.cs" />
      <Compile Include="Assets\scripts\SawBladeScript.cs" />
      <Compile Include="Assets\scripts\SawScript.cs" />
      <Compile Include="Assets\scripts\TurretScript.cs" />
