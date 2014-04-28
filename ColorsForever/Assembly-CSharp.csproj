@@ -46,14 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PlayerFollowScript.cs" />
-     <Compile Include="Assets\SplashScreenScript.cs" />
+     <Compile Include="Assets\AudioScript.cs" />
      <Compile Include="Assets\scripts\BulletScript.cs" />
      <Compile Include="Assets\scripts\ColorControlledObjectScript.cs" />
      <Compile Include="Assets\scripts\ControllerControllerPanelScript.cs" />
      <Compile Include="Assets\scripts\GUIController.cs" />
+     <Compile Include="Assets\scripts\PlayerFollowScript.cs" />
      <Compile Include="Assets\scripts\SawBladeScript.cs" />
      <Compile Include="Assets\scripts\SawScript.cs" />
+     <Compile Include="Assets\scripts\SplashScreenScript.cs" />
      <Compile Include="Assets\scripts\TurretScript.cs" />
      <Compile Include="Assets\scripts\colorChanger.cs" />
      <Compile Include="Assets\scripts\colorPicker.cs" />
