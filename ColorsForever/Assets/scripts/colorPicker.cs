@@ -3,10 +3,11 @@ using System.Collections;
 
 public class colorPicker : MonoBehaviour {
 
-
+	public GUIStyle colorBar, colorIndicator;
 	public Color pickedColor;
 	public float r,g,b;
 	public int decreaseButton, increaseButton;
+	public int colorIndicatorOffset=0;
 
 	public float increment = .01f;
 	private ControllerControllerPanelScript controllerSettings;
@@ -22,6 +23,7 @@ public class colorPicker : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		pickedColor = Color.white;
 		decreaseButton = controllerSettings.ReturnDecreaseButton();
 		increaseButton = controllerSettings.ReturnIncreaseButton();
 	}
@@ -56,6 +58,24 @@ public class colorPicker : MonoBehaviour {
 
 	public Color PickColor(){ 
 		return new Color(r,g,b);
+	}
+
+	void OnGUI(){
+		GUI.Box(new Rect(0,0,1136,65),"",colorBar);
+		/* each bar = 352 px
+		 * r 0-352
+		 * g 392-744
+		 * b 784-1136
+		 */ 
+		float rMapped,gMapped,bMapped;
+		rMapped = r*352;
+		gMapped = g*352 + 352 + 40;
+		bMapped = b*352 + (2*352) + (2*40);
+
+		GUI.Box(new Rect(rMapped-colorIndicatorOffset,29,24,36),"",colorIndicator);
+		GUI.Box(new Rect(gMapped-colorIndicatorOffset,29,24,36),"",colorIndicator);
+		GUI.Box(new Rect(bMapped-colorIndicatorOffset,29,24,36),"",colorIndicator);
+
 	}
 
 }
