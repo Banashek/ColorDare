@@ -5,6 +5,8 @@ ColorDare
 
 It was written in C#, using Unity3D.
 
+The game is targeted towards three player couch co-op using gamepads (xbox, ps3, etc).
+
 Team:
 Jake Cohen    | github.com/soggychips
 Jon Banashek  | github.com/banashek
